@@ -1,0 +1,74 @@
+Name: ...
+CSE 140
+Homework 2
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+Problem 1:
+
+(No answers in this file.)
+
+Problem 2:
+GC-content: 0.4302926296296296
+GC-content(rivised after Problem 6): 0.43059987061138255
+...
+
+Problem 3:
+NameError: name 'linenum' is not defined
+NameError: name 'seq' is not defined
+
+Reason: Variable names should be defined within the program. If Python encounters a name that it doesn't recognize, we'll probably get this error. In this case, the cause of this error is forgetting to initialize it or give a variable a value before using it in another statement.
+
+NameError: name 'gc_count' is not defined
+
+Reason: The reason is the same as the previous errors. gc_count is used in the following statement but it is not initialized before using it.
+...
+
+Problem 4:
+GC-content: 0.4302926296296296
+AT-content: 0.5689938518518518
+
+GC-content(rivised after Problem 6): 0.43059987061138255
+AT-content(rivised after Problem 6): 0.5694001293886175
+...
+
+Problem 5:
+G count: 5738773
+C count: 5879128
+A count: 7701287
+T count: 7661547
+...
+
+Problem 6:
+In most files such as 'test-high-gc-1', 'sample_2', 'sample_3', 'sample_4', 'sample_5', and 'sample_6', 'sum count' is different from 'Total count' and 'seq length'. The reason is that besides 'G' 'C' 'A' 'T' nucleotides, the sequence also contains some 'N'. So the sum of 'G' 'C' 'A' 'T' does not include number of N in the 'Sum count'. Meanwhile, 'Total count' increment one in every iteration and 'seq length' is the length of the whole sequence, so these two variable include the number of N. Following is a example from sample_5 to demonstrate the cause I mentioned above:
+G count: 11
+C count: 9
+A count: 27
+T count: 28
+N count: 1
+Sum count: 75
+Total count 76
+seq length: 76
+...
+
+Problem 7:
+AT/GC Ratio: 1.3223416174746196
+...
+
+Problem 8:
+GC Classification: moderate GC content
+...
+
+Collaboration:
+
+...
+
+Reflection:
+
+...
